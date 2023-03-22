@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+main{
+    height: 80vh;
+    margin:5%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+   
+}
+
+
+
+.text1{
+
+    font-size:clamp(1.5rem, 2.5vw, 3rem);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(12, end);
+    animation-fill-mode: forwards;
+    
+        
+}
+
+.text2{
+ 
+    font-size:clamp(1.5rem, 2.5vw, 3rem);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(20, end);
+    animation-fill-mode: forwards;  
+    animation-delay: 1s; 
+}
+
+.text3{
+
+    font-size:clamp(1.5rem, 2.5vw, 3rem);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1s;
+    animation-timing-function: steps(17, end);
+    animation-fill-mode: forwards; 
+    animation-delay: 2.7s;  
+}
+
+.text4{
+
+    font-size:clamp(1.5rem, 2.5vw, 3rem);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(20, end);
+    animation-fill-mode: forwards; 
+    animation-delay: 3.7s;   
+}
+
+.text5{
+
+    font-size:clamp(1.5rem, 2.5vw, 3rem);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 0.9s;
+    animation-timing-function: steps(10, end);
+    animation-fill-mode: forwards;  
+    animation-delay: 5.1s;  
+}
+
+.text6{
+
+    font-size:clamp(1.5rem, 2.5vw, 3rem);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.4s;
+    animation-timing-function: steps(20, end);
+    animation-fill-mode: forwards;  
+    animation-delay: 6s;  
+}
+
+.text7{
+
+    font-size:clamp(1.5rem, 2.5vw, 3rem);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.1s;
+    animation-timing-function: steps(20, end);
+    animation-fill-mode: forwards; 
+    animation-delay: 7.5s;   
+}
+
+.text8{
+    font-size:clamp(1.5rem, 2.5vw, 3rem);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing;
+    animation-duration: 1.5s;
+    animation-timing-function: steps(20, end);
+    animation-fill-mode: forwards; 
+    animation-delay: 8.5s;
+
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+.conect{
+    margin:10% 0;
+    text-decoration: none;
+    font-size:clamp(1.5rem, 2.5vw, 2rem);
+    color:#28FF0D;
+    background-color: black;
+    border-radius:50px;
+    padding:3% 5%;
+
+  
+}
+
+.animate {
+    animation-duration: 2.5s;
+    animation-name: animate-fade;
+    animation-delay: 9.7s;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  footer{
+    display:none;
+  }
+
+
+
+
+
+
+
+  @media screen and (min-width: 1024px) {
+
+    main{
+        height: 80vh;
+        width:40%;
+        margin:2% auto;
+        align-items:self-start;
+    }
+
+    .text1,.text2,.text3,.text4,.text5,.text6,.text7,.text8{
+        font-size:clamp(1.8rem, 2.5vw, 2rem);
+    }
+
+    .text1{
+        animation-duration: 0.8s;
+    }
+    
+    .text2{
+        animation-duration: 1.5s;
+        animation-delay: 0.8s; 
+    }
+    
+    .text3{
+        animation-duration: 1s;
+        animation-delay: 2.2s;  
+    }
+    
+    .text4{
+    
+        animation-duration: 1.5s;
+        animation-delay: 2.8s;   
+    }
+    
+    .text5{
+    
+        animation-duration: 0.8s;
+        animation-delay: 4s;  
+    }
+    
+    .text6{
+    
+        animation-duration: 1.6s;
+        animation-delay: 5.3s;  
+    }
+    
+    .text7{
+    
+        animation-duration: 1.3s;
+        animation-delay: 6.4s;   
+    }
+    
+    .text8{
+        animation-duration: 1.5s;
+        animation-delay: 6.9s;
+    
+    }
+
+    .conect{
+        font-size:clamp(1rem, 2.5vw, 1.5rem);
+        padding:2% 5%;
+        margin:4%;
+    }
+
+    .animate {
+        animation-delay:7.7s
+ 
+      }
+
+    footer{
+        display:inline-block;
+        background-color: black;
+        color:white;
+        display:flex;
+        align-items: center;
+        padding:0.8%;
+        justify-content: center;
+        bottom:0;
+    }
+
+    .logo_rodape{
+        width:clamp(3.5rem, 2.5vw, 5rem);
+    }
+
+    .text_rodape{
+        font-size:clamp(1rem, 2.5vw, 1.2rem);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+

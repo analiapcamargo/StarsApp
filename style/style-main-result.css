@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Share Tech Mono', monospace;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    height:90vh;
+}
+
+.label-result{
+    margin:15%;
+    animation-duration: 1s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+
+  
+  @keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.foto{
+    width:clamp(7rem, 2.5vw, 12rem);
+    border-radius: 200px;
+}
+
+.user{
+    background-color: #F4FFF2;
+    width:95%;
+    padding:4%;
+    display:flex;
+    justify-content: space-between;
+    font-size:clamp(1.2rem, 2.5vw, 2rem);
+    margin:8%;
+    animation-duration: 1s;
+    animation-name: animate-fade;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+.nome{
+    display:flex;
+    align-items: center;
+}
+
+.info{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.more{
+    background-color:#28FF0D;
+    border:1.5px solid black;
+    border-radius: 50px;
+    text-align: center;
+    color:black;
+    text-decoration: none;
+    padding:1%;
+    margin:10%;
+}
+
+.buscar{
+    background-color: black;
+    color:#28FF0D;
+    width:95%;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    padding:3%;
+    font-size:clamp(1.3rem, 2.5vw, 2rem);
+    margin:10%;
+    animation-duration: 1s;
+    animation-name: animate-fade;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+
+}
+
+footer{
+    display:none;
+  }
+
+
+
+@media screen and (min-width: 1024px) {
+
+    main{
+        height: 80vh;;
+    }
+
+    .label-result{
+        margin:3%;
+        font-size:clamp(1rem, 2.5vw, 1.5rem);
+    }
+
+    .user{
+        margin:1%;
+        padding:4%;
+        display:flex;
+        justify-content: space-between;
+        font-size:clamp(1rem, 2.5vw, 1.5rem);
+        width: clamp(35rem, 2.5vw, 60rem);
+    }
+
+    .foto{
+        width:clamp(10rem, 2.5vw, 20rem);
+        border-radius: 200px;
+    }
+
+    .buscar{
+       margin:1%;
+        width: clamp(35rem, 2.5vw, 60rem);
+        padding:1%;
+        font-size:clamp(1rem, 2.5vw, 1.5rem);
+    
+    }
+
+    footer{
+        display:inline-block;
+        background-color: black;
+        color:white;
+        display:flex;
+        align-items: center;
+        padding:0.8%;
+        justify-content: center;
+        bottom:0;
+    }
+
+    .logo_rodape{
+        width:clamp(3.5rem, 2.5vw, 5rem);
+    }
+
+    .text_rodape{
+        font-size:clamp(1rem, 2.5vw, 1.2rem);
+    }
+
+
+
+}

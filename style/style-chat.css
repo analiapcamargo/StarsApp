@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.animate__animated.animate__fadeInUp {
+    --animate-duration: 1s;
+  }
+
+body{
+    font-family: 'Share Tech Mono', monospace;
+
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avaliação{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:7% 3%;
+    font-size:clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+.estrelas{
+    display: flex;
+    justify-content: center;
+
+}
+
+.icone-estrela{
+    width:clamp(1.3rem, 2.5vw, 2rem);
+}
+
+.chatbot iframe{
+    height:clamp(34rem, 2.5vw, 38rem);
+    width:clamp(20rem, 2.5vw, 22rem);
+    margin:10% 0;
+}

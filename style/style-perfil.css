@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Share Tech Mono', monospace;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.carrossel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:15% 0;
+}
+
+.foto{
+    width:clamp(12rem, 2.5vw, 15rem);
+    border-radius: 5px;
+    margin:0 3%;
+}
+
+.icone-direito,.icone-esquerdo{
+    width:clamp(2rem, 2.5vw, 4rem);
+    cursor: pointer;
+}
+
+.sobre{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:5%;
+    height:clamp(10rem, 2.5vw, 12rem);
+    font-size:clamp(1.2rem, 2.5vw, 1.8rem);
+
+}
+
+.sobre-mais{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:clamp(5rem, 2.5vw, 6rem);
+}
+
+.nome{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    width:100%;
+}
+
+.verificado{
+    margin:1%;
+}
+
+.local{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    width:100%;
+}
+
+.reput{
+    display: flex;
+    justify-content: left;
+    width:100%;
+}
+
+.about{
+    display: flex;
+    justify-content: left;
+    width:100%;
+}
+
+.estrela{
+    width:clamp(1.3rem, 2.5vw, 2rem);
+    height:clamp(1.3rem, 2.5vw, 2rem) ;
+
+}
+
+.chat, .chat_desktop{
+    display:inline-block;
+    background-color: black;
+    color:#28FF0D;
+    text-decoration: none;
+    font-size:clamp(1.5rem, 2.5vw, 2rem);
+    text-align: center;
+    border-radius: 50px;
+    padding:1%;
+    margin:8% 5%;
+}
+
+.chat_desktop{
+    display:none;
+}
+
+
+footer{
+    display:none;
+  }
+
+
+
+@media screen and (min-width: 1024px) {
+
+    main{
+        flex-direction: row;
+        justify-content: space-around;
+        margin:0 5%;
+  
+    }
+    .foto{
+        width:clamp(30rem, 2.5vw, 40rem);
+        margin:0 1%;
+    }
+
+    .carrossel{
+        margin:2% 0;
+    }
+
+    .sobre{
+        justify-content: space-around;
+        align-items: self-start;
+        padding:8% 0%;
+        height:clamp(40rem, 2.5vw, 42rem);
+        font-size:clamp(1.1rem, 2.5vw, 1.5rem);
+        margin:2% 4%;
+    
+    }
+
+    .sobre-mais{
+        justify-content: space-around;
+        height:clamp(20rem, 2.5vw, 26rem);
+    }
+
+    .chat_desktop{
+        display:inline-block;
+        font-size:clamp(1rem, 2.5vw, 1.3rem);
+        text-align: center;
+        padding:2%;
+        margin:7% 5%;
+        width:70%;
+    }
+
+    .chat{
+        display:none;
+    }
+
+    footer{
+        display:inline-block;
+        background-color: black;
+        color:white;
+        display:flex;
+        align-items: center;
+        padding:0.8%;
+        justify-content: center;
+        bottom:0;
+    }
+
+    .logo_rodape{
+        width:clamp(3.5rem, 2.5vw, 5rem);
+    }
+
+    .text_rodape{
+        font-size:clamp(1rem, 2.5vw, 1.2rem);
+    }
+
+}
+
+

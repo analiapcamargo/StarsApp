@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stars'APP</title>
+    <link rel="stylesheet" href="style/style-header.css">
+    <link rel="stylesheet" href="style/style-chat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Cinzel+Decorative:wght@400;700&family=Comforter&family=Dancing+Script:wght@700&family=Lobster&family=Luckiest+Guy&family=Noto+Sans+SC&family=Satisfy&family=Share+Tech+Mono&family=Space+Mono&family=Titan+One&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+    <script src="/js/main-rate.js"></script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+
+        <header class="header">
+            <div class="left">
+                <a class="logo" href="perfil.html"><img src="assets/vetores/seta_esq_full.png" alt="logo principal" ></a>
+                <img src="assets/logos/logo-nome.png" alt="logo com o nome" class="logo-nome">
+            </div> 
+            <a href="index.html" class="home"><img src="assets/vetores/home.png" alt="símbolo página inicial" ></a>
+        </header>
+
+        <main>
+            <div class="avaliação animate__animated animate__fadeInDown">
+                <p class="text-aval">Avalie este usuário:</p>
+
+                <div class="estrelas">
+                    <img src="assets/vetores/star_empty.png" alt="ícone de estrela vazia" class="icone-estrela" onclick="rating(1)" id="star1">
+                    <img src="assets/vetores/star_empty.png" alt="ícone de estrela vazia" class="icone-estrela" onclick="rating(2)" id="star2">
+                    <img src="assets/vetores/star_empty.png" alt="ícone de estrela vazia" class="icone-estrela" onclick="rating(3)" id="star3">
+                    <img src="assets/vetores/star_empty.png" alt="ícone de estrela vazia" class="icone-estrela" onclick="rating(4)" id="star4">
+                    <img src="assets/vetores/star_empty.png" alt="ícone de estrela vazia" class="icone-estrela" onclick="rating(5)" id="star5">
+                </div>
+            </div>
+
+            <div class="chatbot animate__animated animate__fadeInUp">
+                <iframe
+                        allow="microphone;"
+                        src="https://console.dialogflow.com/api-client/demo/embedded/3218797f-000b-4b84-8bfa-6da32d3c83bc">
+                    </iframe>
+            </div>
+        </main>
+
+
+</body>
+</html>

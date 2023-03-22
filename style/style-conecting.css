@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Share Tech Mono', monospace;
+    animation:change-color;
+    animation-duration: 1s;
+    animation-delay: 3.3s;
+  
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading{
+    width:clamp(4rem, 2.5vw, 5rem); 
+    margin: 5%;
+    animation:fadeout;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+}
+.status{
+    font-size:clamp(1.5rem, 2.5vw, 3rem); 
+    margin:5%;
+    animation:fadeout;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeout{
+    from { opacity: 100 }
+    to { opacity: 0 }
+}
+
+@keyframes change-color{
+    from{background-color: white;}
+    to{background-color: black;}
+}
+
+footer{
+    display:none;
+  }
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+    main{
+        height:90vh;
+    }
+
+    .loading{
+        width:clamp(4.5rem, 2.5vw, 5.5rem); 
+        margin: 2%;
+        
+    }
+    .status{
+        font-size:clamp(1.2rem, 2.5vw, 2rem); 
+        margin:2%;
+    }
+
+    footer{
+        display:inline-block;
+        background-color: black;
+        color:white;
+        display:flex;
+        align-items: center;
+        padding:0.8%;
+        justify-content: center;
+        bottom:0;
+    }
+
+    .logo_rodape{
+        width:clamp(3.5rem, 2.5vw, 5rem);
+    }
+
+    .text_rodape{
+        font-size:clamp(1rem, 2.5vw, 1.2rem);
+    }
+
+
+}

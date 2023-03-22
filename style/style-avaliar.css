@@ -1,0 +1,118 @@
+.animate__animated.animate__zoomInRight {
+    --animate-duration: 1s;
+  }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Share Tech Mono', monospace;
+
+}
+
+
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatbot{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 5%;
+    height:clamp(35rem, 2.5vw, 38rem);
+    margin:5%;
+
+}
+
+.chatbot iframe{
+    height:clamp(35rem, 2.5vw, 38rem);
+    width:clamp(30rem, 2.5vw, 30rem);
+    margin:0% 0;
+    display:inline-block;
+}
+
+.perfil{
+    width:clamp(8rem, 2.5vw, 10rem);
+    border-radius: 100px;
+    margin:0 3%;
+}
+
+.avaliacao{
+    height:clamp(35rem, 2.5vw, 38rem);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:5%;
+}
+
+.btn{
+    display:inline-block;
+    background-color: black;
+    color:#28FF0D;
+    text-decoration: none;
+    font-size:clamp(1rem, 2.5vw, 1.3rem);
+    text-align: center;
+    border-radius: 50px;
+    padding:1% 5%;
+    width:clamp(20rem, 2.5vw, 25rem);
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.msg{
+    height:clamp(10rem, 2.5vw, 12rem);
+    width:clamp(20rem, 2.5vw, 25rem);
+    text-align:center;
+    font-family: 'Share Tech Mono', monospace;
+    padding:2%;
+    
+}
+
+.nome{
+    font-size:clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+
+}
+
+.icone-estrela{
+    width:clamp(1rem, 2.5vw, 1.3rem);
+    margin:1%;
+
+}
+
+.sent{
+    display:none;
+    text-align: center;
+    margin:15%;
+}
+
+footer{
+    display:inline-block;
+    background-color: black;
+    color:white;
+    display:flex;
+    align-items: center;
+    padding:0.8%;
+    justify-content: center;
+    bottom:0;
+}
+
+.logo_rodape{
+    width:clamp(3.5rem, 2.5vw, 5rem);
+}
+
+.text_rodape{
+    font-size:clamp(1rem, 2.5vw, 1.2rem);
+}
