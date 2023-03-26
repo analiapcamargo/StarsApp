@@ -18,4 +18,4 @@
 
 ## Links
 
- [Link para acessar]([https://analiapcamargo.github.io/StarsApp/]).
+ [Link para acessar](https://analiapcamargo.github.io/StarsApp/).
