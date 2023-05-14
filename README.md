@@ -9,8 +9,6 @@ https://www.figma.com/file/TpG09XX1ZzdYoHPDiJldy8/Stars'App?type=design&node-id=
 * Flexbox
 * Animation (CSS and Animate Library)
 
-
-
 ## Preview
 
 ![Preview](/assets/preview1.png "Demonstração")
