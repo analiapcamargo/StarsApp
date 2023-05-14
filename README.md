@@ -1,9 +1,13 @@
 # Stars'App
 
-* Think mobile first
-* Responsivo para dispositivos móveis
+## Figma Project: 
+https://www.figma.com/file/TpG09XX1ZzdYoHPDiJldy8/Stars'App?type=design&node-id=0%3A1&t=Su6OY1KbBsV0UGZU-1
+
+## *Code key points :*
+* Think Mobile First
+* Responsive 
 * Flexbox
-* Animação (CSS e biblioteca animate)
+* Animation (CSS and Animate Library)
 
 
 
